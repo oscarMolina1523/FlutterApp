@@ -14,7 +14,7 @@ class _CounterScreenState extends State<CounterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:const Text("This is the title appBar"),
+        title:const Text("My counter Functions"),
         actions: [
           IconButton(
             onPressed:(){
