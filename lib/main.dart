@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:invoicesapp/presentation/screens/counter_screen.dart';
+import 'package:invoicesapp/presentation/screens/chat/chat_screen.dart';
+// import 'package:invoicesapp/presentation/screens/yes_no_screen.dart';
+// import 'package:invoicesapp/presentation/screens/counter_screen.dart';
 
 void main(){
   runApp(const MyApp());
@@ -10,13 +12,10 @@ class MyApp extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false, //este sirve para quitar la etiqueta que dice que esta en desarrollo
-      theme: ThemeData(
-        useMaterial3: true,
-        colorSchemeSeed: Colors.blue
-      ),
-      home: CounterScreen()
+      // home: CounterScreen()
+      home:ChatScreen(),
     );
   }
 }
