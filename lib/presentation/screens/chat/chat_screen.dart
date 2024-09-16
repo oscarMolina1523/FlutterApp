@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:invoicesapp/presentation/widgets/chat/her_message_bubble.dart';
 import 'package:invoicesapp/presentation/widgets/chat/my_message_bubble.dart';
+import 'package:invoicesapp/presentation/widgets/shared/message_field_chat.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
@@ -37,7 +38,7 @@ class _chatView extends StatelessWidget {
                 return  (index % 2 ==0) ? HerMessageBubble(): MyMessageBubble();
               })
             ), 
-            Text("Hola mundo")
+            const MessageFieldChat()
           ],
         ),
       ),

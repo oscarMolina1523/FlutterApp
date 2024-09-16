@@ -39,6 +39,14 @@ class _ImageBubble extends StatelessWidget {
       borderRadius: BorderRadius.circular(10),
       child: Image.network('https://blogscvc.cervantes.es/martes-neologico/wp-content/uploads/sites/2/2021/08/gif_500.gif',
       width: size.width * 0.7,
+      loadingBuilder: (context, child, loadingProgress){ //este es un widget para mostrar un mensaje mientras carga el contenido real que es la imagen
+          if(loadingProgress == null ) return child; //si ya esta cargada retorna el hijo que es la imagen
+
+          return Container(
+            width: size.width * 0.7,
+            child: const Text("Mi amor esta enviando un mensaje")
+          );
+        },
       )
     );
   }
