@@ -37,7 +37,7 @@ class _ImageBubble extends StatelessWidget {
 
     return ClipRRect(
       borderRadius: BorderRadius.circular(10),
-      child: Image.network('https://blogscvc.cervantes.es/martes-neologico/wp-content/uploads/sites/2/2021/08/gif_500.gif',
+      child: Image.network('https://i.pinimg.com/originals/57/61/5b/57615b8c0092a66c1d4058b1692955cc.gif',
       width: size.width * 0.7,
       loadingBuilder: (context, child, loadingProgress){ //este es un widget para mostrar un mensaje mientras carga el contenido real que es la imagen
           if(loadingProgress == null ) return child; //si ya esta cargada retorna el hijo que es la imagen
